@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/spotipath/static/css/main.5f361e03.chunk.css",
+    "main.js": "/spotipath/static/js/main.9bddba79.chunk.js",
+    "main.js.map": "/spotipath/static/js/main.9bddba79.chunk.js.map",
+    "runtime-main.js": "/spotipath/static/js/runtime-main.e884f8c6.js",
+    "runtime-main.js.map": "/spotipath/static/js/runtime-main.e884f8c6.js.map",
+    "static/js/2.196074b1.chunk.js": "/spotipath/static/js/2.196074b1.chunk.js",
+    "static/js/2.196074b1.chunk.js.map": "/spotipath/static/js/2.196074b1.chunk.js.map",
+    "index.html": "/spotipath/index.html",
+    "precache-manifest.eea167f13530c401a5b781dbefa5784b.js": "/spotipath/precache-manifest.eea167f13530c401a5b781dbefa5784b.js",
+    "service-worker.js": "/spotipath/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/spotipath/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.196074b1.chunk.js.LICENSE.txt": "/spotipath/static/js/2.196074b1.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/spotipath/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e884f8c6.js",
+    "static/js/2.196074b1.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.9bddba79.chunk.js"
+  ]
+}
