@@ -1,20 +1,18 @@
-import React from 'react';
-import ArtistCard from './ArtistCard';
-import artists from '../mock-data.json';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import ArtistContainer from './ArtistContainer';
 import SearchBar from './SearchBar';
+import { Container } from 'react-bootstrap';
 
-const Content = () => (
-  <Container>
-    <SearchBar />
-    {artists.map(artist => (
-      <Row key={artist.id}>
-        <Col xs={12} md={10}>
-          <ArtistCard artist={artist}/>
-        </Col>
-      </Row>
-    ))}
-  </Container>
-);
+const Content = () => {
+  const [artistData, setArtistData] = useState({ src: null, dest: null });
+
+  return (  
+    <Container>
+      <SearchBar setArtistData={setArtistData} />
+      <ArtistContainer artistData={artistData} />
+    </Container>
+  );
+}
+
 
 export default Content;
