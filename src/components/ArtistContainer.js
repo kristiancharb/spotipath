@@ -9,19 +9,21 @@ const ArtistContainer = (props) => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const updateArtists = async (form) => {
+    try {
+      const artists = await getArtistData(form);
+      setError(null);
+      setArtists(artists);
+    } catch (error) {
+      setError(error.message);
+    }
+    setIsLoading(false);
+  }
+
   useEffect(() => {
     if (formData.src && formData.dest) {
       setIsLoading(true);
-      const updateArtists = async () => {
-        try {
-          const artists = await getArtistData(formData);
-          setArtists(artists);
-        } catch (error) {
-          setError(error.message);
-        }
-        setIsLoading(false);
-      }
-      updateArtists();
+      updateArtists(formData);
     }
   }, [formData]);
 
