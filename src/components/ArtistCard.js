@@ -2,29 +2,29 @@ import React from 'react';
 import { Container, Row, Col, Card} from 'react-bootstrap';
 
 const ArtistCard = ({ artist }) => (
-  <Card className="mt-3">
-    <Container>
-      <Row>
-        <Col xs={4}>
-          <Card.Img 
+  <Card as={Container} className="mt-3">
+    <Row>
+      <Col xs={12}>
+        <h3 className="text-dark text-center text-md-left my-2">{artist.name}</h3>
+      </Col>
+        <Col xs={{span: 8, offset: 2}} md={{span: 4, offset: 0}}>
+          <Card.Img
             variant="top"
-            className="pt-2 pb-2"
+            className="m-auto pt-2 pb-2"
             src={artist.tracks[0].imageUrl} 
             alt="Card image cap" 
           />
         </Col>
-        <Col xs={8}>
+        <Col xs={12} md={8}>
           <Card.Body>
-            <Card.Title>{artist.name}</Card.Title>
-            {artist.tracks.map((track) => (
-              <Card.Text key={track.id}>
-              <strong>{track.name}</strong> - {track.artistName}
-            </Card.Text>
-            ))}
+              {artist.tracks.map((track) => (
+                <Card.Text className="text-dark" key={track.id}>
+                  <strong>{track.name}</strong> - {track.artistName}
+                </Card.Text>
+              ))}
           </Card.Body>
         </Col>
-      </Row>
-    </Container>
+    </Row>
   </Card>
 );
 

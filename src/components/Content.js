@@ -3,12 +3,21 @@ import ArtistContainer from './ArtistContainer';
 import SearchBar from './SearchBar';
 import { Container } from 'react-bootstrap';
 
+const params = new URLSearchParams(window.location.search);
+
+const initialFormData =  {
+  'src': params.get('src'),
+  'dest': params.get('dest'),
+  'recommended': params.get('recommended') === 'true' || false,
+  'numSongs': params.get('numSongs') || 1,
+}
+
 const Content = () => {
-  const [formData, setFormData] = useState({ src: null, dest: null });
+  const [formData, setFormData] = useState(initialFormData);
 
   return (  
     <Container>
-      <SearchBar setFormData={setFormData} />
+      <SearchBar setFormData={setFormData} initialFormData={initialFormData}/>
       <ArtistContainer formData={formData} />
     </Container>
   );
