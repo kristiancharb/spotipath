@@ -9,17 +9,18 @@ const ArtistCard = ({ artist }) => (
           <Card.Img 
             variant="top"
             className="pt-2 pb-2"
-            src="http://via.placeholder.com/300x180" 
+            src={artist.tracks[0].imageUrl} 
             alt="Card image cap" 
           />
         </Col>
         <Col xs={8}>
           <Card.Body>
             <Card.Title>{artist.name}</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+            {artist.tracks.map((track) => (
+              <Card.Text key={track.id}>
+              <strong>{track.name}</strong> - {track.artistName}
             </Card.Text>
+            ))}
           </Card.Body>
         </Col>
       </Row>

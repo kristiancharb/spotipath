@@ -4,12 +4,12 @@ import SearchBar from './SearchBar';
 import { Container } from 'react-bootstrap';
 
 const Content = () => {
-  const [artistData, setArtistData] = useState({ src: null, dest: null });
+  const [formData, setFormData] = useState({ src: null, dest: null });
 
   return (  
     <Container>
-      <SearchBar setArtistData={setArtistData} />
-      <ArtistContainer artistData={artistData} />
+      <SearchBar setFormData={setFormData} />
+      <ArtistContainer formData={formData} />
     </Container>
   );
 }

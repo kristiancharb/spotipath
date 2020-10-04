@@ -11,7 +11,7 @@ const SearchBar = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.setArtistData(formData);
+    props.setFormData(formData);
     console.log(formData);
   }
   
@@ -77,7 +77,7 @@ const SearchBar = (props) => {
         <Row className="w-100 pt-2">
           <Col xs={12} md={10}>
             <Form.Group controlId="numSongs">
-              <Form.Label className="mr-4">Songs per artist: </Form.Label>
+              <Form.Label className="mr-4">Maximum number of songs per artist: </Form.Label>
               <Form.Control 
                 name="numSongs" 
                 className="px-4" 
