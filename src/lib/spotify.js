@@ -26,7 +26,7 @@ const getSpotifyHeaders = () => {
 
 const getArtistName = (track) => {
   if (Array.isArray(track.artists) && track.artists.length > 0) {
-    return track.artists[0].name;
+    return track.artists.map((artist) => artist.name).join(', ');
   }
 }
 
@@ -72,7 +72,6 @@ const getTracks = async (artist, numSongs, recommended) => {
     `https://api.spotify.com/v1/artists/${artist.id}/top-tracks?market=US`;
   const response = await request(url, getSpotifyHeaders());
   const tracks = response.tracks;
-  console.log(numSongs);
   return tracks.slice(0, numSongs).map((track) => (
     {
       id: track.id,

@@ -14,6 +14,13 @@ const SearchBar = (props) => {
     props.setFormData(formData);
     console.log(formData);
   }
+
+  const handleCheckBoxChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.checked
+    });
+  }
   
   const handleChange = (event) => {
     setFormData({
@@ -69,7 +76,7 @@ const SearchBar = (props) => {
                 name="recommended"
                 type="checkbox" 
                 label="Add recommended songs by artists not necessarily in the path"
-                onChange={handleChange}
+                onChange={handleCheckBoxChange}
               />
             </Form.Group>
           </Col>

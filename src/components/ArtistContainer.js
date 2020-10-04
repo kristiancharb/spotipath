@@ -15,7 +15,6 @@ const ArtistContainer = (props) => {
       const updateArtists = async () => {
         try {
           const artists = await getArtistData(formData);
-          console.log(artists);
           setArtists(artists);
         } catch (error) {
           setError(error.message);
