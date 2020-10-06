@@ -23,7 +23,7 @@ const AboutModal = (props) => {
         <h4>Inspiration</h4>
         <p>
           Spotipath was inspired by <a href="http://boilthefrog.playlistmachinery.com/">Boil the Frog</a>.
-          I thought it was a really cool way of using the Spotify API and decided I wanted to try my handse 
+          I thought it was a really cool way of using the Spotify API and decided I wanted to try my hand 
           at recreating it and maybe figuring out a way to put my own spin on it. 
         </p>
         <h4>How it works</h4>

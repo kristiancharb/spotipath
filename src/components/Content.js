@@ -6,8 +6,8 @@ import { Container } from 'react-bootstrap';
 const params = new URLSearchParams(window.location.search);
 
 const initialFormData =  {
-  'src': params.get('src'),
-  'dest': params.get('dest'),
+  'src': params.get('src') && decodeURI(params.get('src')),
+  'dest': eparams.get('dest') && decodeURI(params.get('dest')),
   'recommended': params.get('recommended') === 'true' || false,
   'numSongs': params.get('numSongs') || 1,
 }
