@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/spotipath/static/css/main.3c13c0ea.chunk.css",
-    "main.js": "/spotipath/static/js/main.0e8e61b6.chunk.js",
-    "main.js.map": "/spotipath/static/js/main.0e8e61b6.chunk.js.map",
+    "main.js": "/spotipath/static/js/main.9c5a09eb.chunk.js",
+    "main.js.map": "/spotipath/static/js/main.9c5a09eb.chunk.js.map",
     "runtime-main.js": "/spotipath/static/js/runtime-main.e884f8c6.js",
     "runtime-main.js.map": "/spotipath/static/js/runtime-main.e884f8c6.js.map",
-    "static/js/2.d8a0285b.chunk.js": "/spotipath/static/js/2.d8a0285b.chunk.js",
-    "static/js/2.d8a0285b.chunk.js.map": "/spotipath/static/js/2.d8a0285b.chunk.js.map",
+    "static/js/2.be6b3f89.chunk.js": "/spotipath/static/js/2.be6b3f89.chunk.js",
+    "static/js/2.be6b3f89.chunk.js.map": "/spotipath/static/js/2.be6b3f89.chunk.js.map",
     "index.html": "/spotipath/index.html",
-    "precache-manifest.88a03829c31c909eb1fab71869e1ef04.js": "/spotipath/precache-manifest.88a03829c31c909eb1fab71869e1ef04.js",
+    "precache-manifest.3c79fa23324350d4e12fc3221833ffa0.js": "/spotipath/precache-manifest.3c79fa23324350d4e12fc3221833ffa0.js",
     "service-worker.js": "/spotipath/service-worker.js",
     "static/css/main.3c13c0ea.chunk.css.map": "/spotipath/static/css/main.3c13c0ea.chunk.css.map",
-    "static/js/2.d8a0285b.chunk.js.LICENSE.txt": "/spotipath/static/js/2.d8a0285b.chunk.js.LICENSE.txt"
+    "static/js/2.be6b3f89.chunk.js.LICENSE.txt": "/spotipath/static/js/2.be6b3f89.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e884f8c6.js",
-    "static/js/2.d8a0285b.chunk.js",
+    "static/js/2.be6b3f89.chunk.js",
     "static/css/main.3c13c0ea.chunk.css",
-    "static/js/main.0e8e61b6.chunk.js"
+    "static/js/main.9c5a09eb.chunk.js"
   ]
 }
